@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rewardz2U Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h1 class="text-white font-weight-bold">Rewardz2U Login</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <h1 class="login-heading">Login</h1>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter username/Email ID">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+          </div>
+          <div class="signup-link">
+            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    // Add animation to form
+    const form = document.querySelector('.fade-in');
+    form.classList.add('fade-in');
+  </script>
+</body>
+
+</html>

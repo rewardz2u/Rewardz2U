@@ -1,0 +1,197 @@
+/* Header styles */
+header {
+    background: #0c192c;
+  }
+  
+  body {
+    background-color: #0c192c;
+  }
+  .navbar-brand {
+      display: inline-block;
+      padding-top: 0.3125rem;
+      padding-bottom: 0.3125rem;
+      margin-right: 1rem;
+      font-size: 25px;
+      font-weight: bold;
+      line-height: inherit;
+      white-space: nowrap;
+  }
+  
+  
+  header h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  a {
+      color: #ffffff;
+      text-decoration: none;
+      background-color: transparent;
+  }
+  
+  header .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  header .btn-outline-light:hover {
+    background-color: #fff;
+    color: #0c192c;
+  }
+  
+  /* Animations */
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-up {
+    animation: slide-up 0.8s ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes slide-down {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-down {
+    animation: slide-down 0.8s ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fade-in 1s ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate {
+    animation: rotate 1s linear infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .pulse {
+    animation: pulse 1s linear infinite;
+  }
+  
+  
+  .content {
+    display: inline-block;
+    margin-top: 20px;
+    flex-direction: row;
+  }
+  .header-image1 {
+    display: flex;
+    width: 600px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  }
+  .header-image2 {
+    display: flex;
+    width: 600px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  }
+  .header-image3 {
+    display: flex;
+    width: 600px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  }
+  
+  .esports-paragraph1 {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    margin-top: 150px;
+    margin-left: 300px;
+  }
+  .esports-paragraph2 {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    margin-top: 100px;
+    margin-left: 300px;
+  }
+  .esports-paragraph3 {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 300px;
+  }
+  
+  @media (max-width: 767px) {
+              .header-image1 {
+                  max-width: 100%;
+                  height: auto;
+                  margin-bottom: 20px;
+              }
+              .esports-paragraph1 {
+                  margin-top: 10px;
+          margin-left: 20px;
+              }
+        .header-image2 {
+                  max-width: 100%;
+                  height: auto;
+                  margin-bottom: 20px;
+              }
+        .esports-paragraph2 {
+                  margin-top: 10px;
+          margin-left: 20px;
+              }
+        .esports-paragraph3 {
+                  margin-top: 10px;
+          margin-left: 20px;
+          margin-bottom: 200px;
+              }
+          }
+  
+  
