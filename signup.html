@@ -25,13 +25,58 @@
                 <label for="username">Username</label>
                 <input type="text" class="form-control" id="username" name="username" placeholder="Create new username" required>
               </div>
-              <div>
+              <div class="form-group">
                 <label for="email">Email ID</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Enter your E-mail ID" required>
               </div>
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required>
+              </div>
+              <div class="form-group">
+                <label for="firstName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name" required>
+              </div>
+              <div class="form-group">
+                <label for="country">Country</label>
+                <select class="form-control" id="country" name="country" required>
+                  <option value="">Select your country...</option>
+                </select>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+              </div>
+              <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>  
+              </div>
+              <div class="form-group">
+                  <input type="checkbox" id="terms" name="terms" required>
+                  <label for="terms">I agree to the <a href="#">terms and conditions</a>.</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Signup</button>
            </form>
           </div>
         </div>
       </div>
 </body>
 </html>
+
+<script>
+  // Make AJAX request to REST Countries API
+  fetch('https://restcountries.com/v2/all?fields=name')
+    .then(response => response.json())
+    .then(data => {
+      // Get the country dropdown element
+      const countryDropdown = document.getElementById('country');
+
+      // Loop through the country data and create an option element for each country
+      data.forEach(country => {
+        const option = document.createElement('option');
+        option.value = country.name;
+        option.textContent = country.name;
+        countryDropdown.appendChild(option);
+      });
+    })
+    .catch(error => console.error(error));
+</script>
