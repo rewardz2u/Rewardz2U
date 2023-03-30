@@ -29,6 +29,7 @@ margin-bottom: 20px;
     padding: 20px;
     background: #343a40;
     border-radius: 5px;
+    margin-bottom: 30px;
   }
 
   .form-group {
@@ -41,3 +42,31 @@ label {
     margin-bottom: 0.5rem;
     color: #fff;
 }
+
+.form-control {
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  font-size: 18px;
+  padding: 10px;
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #0066cc;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #0052a3;
+  outline: none;
+  box-shadow: none;
+}
+
